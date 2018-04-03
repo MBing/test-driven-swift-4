@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ToDo App
+//  ToDo
 //
 //  Created by Martin Demiddel on 03.04.18.
 //  Copyright © 2018 Martin Demiddel. All rights reserved.
