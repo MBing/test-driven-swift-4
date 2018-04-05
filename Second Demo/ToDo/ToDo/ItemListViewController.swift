@@ -9,5 +9,11 @@
 import UIKit
 
 class ItemListViewController: UIViewController {
-
+    @IBOutlet var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView = UITableView()
+    }
 }
