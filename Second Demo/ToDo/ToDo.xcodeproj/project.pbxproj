@@ -18,6 +18,8 @@
 		5ADCBEEF2074046D003D6FD3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCBEEE2074046D003D6FD3 /* LocationTests.swift */; };
 		5ADCBEF12074091F003D6FD3 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCBEF02074091F003D6FD3 /* ItemManager.swift */; };
 		5ADCBEF320740930003D6FD3 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCBEF220740930003D6FD3 /* ItemManagerTests.swift */; };
+		5ADCBEF72076C08E003D6FD3 /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCBEF62076C08E003D6FD3 /* ItemListViewControllerTests.swift */; };
+		5ADCBEFB2076C1BD003D6FD3 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCBEFA2076C1BD003D6FD3 /* ItemListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		5ADCBEEE2074046D003D6FD3 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		5ADCBEF02074091F003D6FD3 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 		5ADCBEF220740930003D6FD3 /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
+		5ADCBEF62076C08E003D6FD3 /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
+		5ADCBEFA2076C1BD003D6FD3 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,7 @@
 				5ADCBEC12073F932003D6FD3 /* Assets.xcassets */,
 				5ADCBEC32073F932003D6FD3 /* LaunchScreen.storyboard */,
 				5ADCBEC62073F932003D6FD3 /* Info.plist */,
-				5ADCBEE82073F99C003D6FD3 /* ToDoItem.swift */,
-				5ADCBEEC20740131003D6FD3 /* Location.swift */,
+				5ADCBEFA2076C1BD003D6FD3 /* ItemListViewController.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -104,9 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				5ADCBEE22073F980003D6FD3 /* Info.plist */,
-				5ADCBEEA2073F9C1003D6FD3 /* ToDoItemTests.swift */,
-				5ADCBEEE2074046D003D6FD3 /* LocationTests.swift */,
-				5ADCBEF220740930003D6FD3 /* ItemManagerTests.swift */,
+				5ADCBEF52076C039003D6FD3 /* Model */,
+				5ADCBEF62076C08E003D6FD3 /* ItemListViewControllerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -114,7 +116,19 @@
 		5ADCBEF4207414CC003D6FD3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5ADCBEE82073F99C003D6FD3 /* ToDoItem.swift */,
+				5ADCBEEC20740131003D6FD3 /* Location.swift */,
 				5ADCBEF02074091F003D6FD3 /* ItemManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5ADCBEF52076C039003D6FD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5ADCBEEA2073F9C1003D6FD3 /* ToDoItemTests.swift */,
+				5ADCBEEE2074046D003D6FD3 /* LocationTests.swift */,
+				5ADCBEF220740930003D6FD3 /* ItemManagerTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +241,7 @@
 				5ADCBEBB2073F932003D6FD3 /* AppDelegate.swift in Sources */,
 				5ADCBEED20740131003D6FD3 /* Location.swift in Sources */,
 				5ADCBEE92073F99C003D6FD3 /* ToDoItem.swift in Sources */,
+				5ADCBEFB2076C1BD003D6FD3 /* ItemListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +252,7 @@
 				5ADCBEF320740930003D6FD3 /* ItemManagerTests.swift in Sources */,
 				5ADCBEEF2074046D003D6FD3 /* LocationTests.swift in Sources */,
 				5ADCBEEB2073F9C1003D6FD3 /* ToDoItemTests.swift in Sources */,
+				5ADCBEF72076C08E003D6FD3 /* ItemListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
