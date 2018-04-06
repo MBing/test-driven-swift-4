@@ -13,7 +13,7 @@
         <!--Item List View Controller-->
         <scene sceneID="4j4-dt-8Lv">
             <objects>
-                <viewController id="zf3-Xy-s8k" customClass="ItemListViewController" customModule="ToDo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemListViewController" id="zf3-Xy-s8k" customClass="ItemListViewController" customModule="ToDo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fTV-bF-N7I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,6 +27,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="b55-Gx-OGi"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="hoC-HF-KKU" id="xA7-QQ-akD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLX-FO-i0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
