@@ -21,6 +21,7 @@
 		5ADCBEFB2076C1BD003D6FD3 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCBEFA2076C1BD003D6FD3 /* ItemListViewController.swift */; };
 		5AEE4AE7207A5891008FD2B3 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE4AE6207A5891008FD2B3 /* ItemListDataProvider.swift */; };
 		5AEE4AE9207A8209008FD2B3 /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE4AE8207A8209008FD2B3 /* ItemListDataProviderTests.swift */; };
+		5AEE4AED207A9B83008FD2B3 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE4AEC207A9B83008FD2B3 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		5ADCBEFA2076C1BD003D6FD3 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		5AEE4AE6207A5891008FD2B3 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 		5AEE4AE8207A8209008FD2B3 /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
+		5AEE4AEC207A9B83008FD2B3 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemCell.swift; path = Controller/ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				5ADCBEC62073F932003D6FD3 /* Info.plist */,
 				5ADCBEFA2076C1BD003D6FD3 /* ItemListViewController.swift */,
 				5AEE4AE6207A5891008FD2B3 /* ItemListDataProvider.swift */,
+				5AEE4AEC207A9B83008FD2B3 /* ItemCell.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				5AEE4AE7207A5891008FD2B3 /* ItemListDataProvider.swift in Sources */,
 				5ADCBEBB2073F932003D6FD3 /* AppDelegate.swift in Sources */,
 				5ADCBEED20740131003D6FD3 /* Location.swift in Sources */,
+				5AEE4AED207A9B83008FD2B3 /* ItemCell.swift in Sources */,
 				5ADCBEE92073F99C003D6FD3 /* ToDoItem.swift in Sources */,
 				5ADCBEFB2076C1BD003D6FD3 /* ItemListViewController.swift in Sources */,
 			);
