@@ -19,7 +19,8 @@ class ItemListDataProviderTests: XCTestCase {
         sut = ItemListDataProvider()
         sut.itemManager = ItemManager()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        controller = storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController
+        controller = storyboard.instantiateViewController(
+            withIdentifier: "ItemListViewController") as! ItemListViewController
         controller.loadView()
         tableView = controller.tableView
         tableView.dataSource = sut
@@ -27,7 +28,9 @@ class ItemListDataProviderTests: XCTestCase {
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        /*  Put teardown code here.
+            This method is called after the invocation of each test method in the class.
+         */
         super.tearDown()
     }
 
@@ -43,7 +46,8 @@ class ItemListDataProviderTests: XCTestCase {
         XCTAssertEqual(tableView.numberOfRows(inSection: 0), 1)
         sut.itemManager?.add(ToDoItem(title: "Bar"))
 
-        // Table Views cache the values for performance, manual reload is necessary to reflect the new state
+        // Table Views cache the values for performance,
+        // manual reload is necessary to reflect the new state
         tableView.reloadData()
 
         XCTAssertEqual(tableView.numberOfRows(inSection: 0), 2)
@@ -72,7 +76,6 @@ class ItemListDataProviderTests: XCTestCase {
 
     func test_CellForRow_DequeuesCellFromTableView() {
         let mockTableView = MockTableView.mockTableView(withDataSource: sut)
-
         let item = ToDoItem(title: "Foo")
         sut.itemManager?.add(item)
         mockTableView.reloadData()
@@ -86,23 +89,23 @@ class ItemListDataProviderTests: XCTestCase {
         let item = ToDoItem(title: "Foo")
         sut.itemManager?.add(item)
         mockTableView.reloadData()
-
-        let cell = mockTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! MockItemCell
+        guard let cell = mockTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? MockItemCell else {
+            fatalError()
+        }
 
         XCTAssertEqual(cell.catchedItem, item)
     }
 
     func test_CellForRow_SecondSection_CallsConfigCellWithDoneItem() {
         let mockTableView = MockTableView.mockTableView(withDataSource: sut)
-
         sut.itemManager?.add(ToDoItem(title: "Foo"))
-
         let second = ToDoItem(title: "Bar")
         sut.itemManager?.add(second)
         sut.itemManager?.checkItem(at: 1)
         mockTableView.reloadData()
-
-        let cell = mockTableView.cellForRow(at: IndexPath(row: 0, section: 1)) as! MockItemCell
+        guard let cell = mockTableView.cellForRow(at: IndexPath(row: 0, section: 1)) as? MockItemCell else {
+            fatalError()
+        }
 
         XCTAssertEqual(cell.catchedItem, second)
     }
@@ -112,6 +115,7 @@ class ItemListDataProviderTests: XCTestCase {
             tableView,
             titleForDeleteConfirmationButtonForRowAt: IndexPath(row: 0,
                                                                 section: 0))
+
         XCTAssertEqual(deleteButtonTitle, "Check")
     }
 
@@ -120,21 +124,23 @@ class ItemListDataProviderTests: XCTestCase {
             tableView,
             titleForDeleteConfirmationButtonForRowAt: IndexPath(row: 0,
                                                                 section: 1))
+
         XCTAssertEqual(deleteButtonTitle, "Uncheck")
     }
-    
+
     func test_CheckingAnItem_ChecksItInTheItemManager() {
         sut.itemManager?.add(ToDoItem(title: "Foo"))
         tableView.dataSource?.tableView?(tableView,
                                          commit: .delete,
                                          forRowAt: IndexPath(row: 0,
                                                              section: 0))
+
         XCTAssertEqual(sut.itemManager?.toDoCount, 0)
         XCTAssertEqual(sut.itemManager?.doneCount, 1)
         XCTAssertEqual(tableView.numberOfRows(inSection: 0), 0)
         XCTAssertEqual(tableView.numberOfRows(inSection: 1), 1)
     }
-    
+
     func test_UncheckingAnItem_UnchecksItInTheItemManager() {
         sut.itemManager?.add(ToDoItem(title: "First"))
         sut.itemManager?.checkItem(at: 0)
@@ -143,6 +149,7 @@ class ItemListDataProviderTests: XCTestCase {
                                          commit: .delete,
                                          forRowAt: IndexPath(row: 0,
                                                              section: 1))
+
         XCTAssertEqual(sut.itemManager?.toDoCount, 1)
         XCTAssertEqual(sut.itemManager?.doneCount, 0)
         XCTAssertEqual(tableView.numberOfRows(inSection: 0), 1)
@@ -174,6 +181,7 @@ extension ItemListDataProviderTests {
                 mockTableView.dataSource = dataSource
                 mockTableView.register(MockItemCell.self,
                                        forCellReuseIdentifier: "ItemCell")
+
                 return mockTableView
         }
     }
