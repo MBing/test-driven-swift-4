@@ -102,7 +102,9 @@ class ItemListDataProviderTests: XCTestCase {
         let second = ToDoItem(title: "Bar")
         sut.itemManager?.add(second)
         sut.itemManager?.checkItem(at: 1)
+        
         mockTableView.reloadData()
+        
         guard let cell = mockTableView.cellForRow(at: IndexPath(row: 0, section: 1)) as? MockItemCell else {
             fatalError()
         }
