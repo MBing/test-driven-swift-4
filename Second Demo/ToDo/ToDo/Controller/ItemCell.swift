@@ -24,13 +24,17 @@ class ItemCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override func setSelected(
+        _ selected: Bool,
+        animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
 
-    func configCell(with item: ToDoItem) {
+    func configCell(
+        with item: ToDoItem,
+        checked: Bool = false) {
         titleLabel.text = item.title
         locationLabel.text = item.location?.name
 
