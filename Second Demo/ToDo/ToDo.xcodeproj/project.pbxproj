@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		5A0596432076C58600304D5D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5A3AAFFC2089E9C300EC865B /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
-		5A3AAFFE2089EA3900EC865B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Controller/DetailViewController.swift; sourceTree = "<group>"; };
+		5A3AAFFE2089EA3900EC865B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5A3AB000208A247F00EC865B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5ADCBEB72073F932003D6FD3 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADCBEBA2073F932003D6FD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +91,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5A3AB003208A311700EC865B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5ADCBEF62076C08E003D6FD3 /* ItemListViewControllerTests.swift */,
+				5A3AAFFC2089E9C300EC865B /* DetailViewControllerTests.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5A3AB004208A313D00EC865B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5ADCBEFA2076C1BD003D6FD3 /* ItemListViewController.swift */,
+				5A3AAFFE2089EA3900EC865B /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		5ADCBEAE2073F931003D6FD3 = {
 			isa = PBXGroup;
 			children = (
@@ -113,16 +131,15 @@
 		5ADCBEB92073F932003D6FD3 /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				5A3AB004208A313D00EC865B /* Controllers */,
 				5ADCBEF4207414CC003D6FD3 /* Model */,
 				5ADCBEBA2073F932003D6FD3 /* AppDelegate.swift */,
 				5ADCBEC12073F932003D6FD3 /* Assets.xcassets */,
 				5ADCBEC32073F932003D6FD3 /* LaunchScreen.storyboard */,
 				5A0596432076C58600304D5D /* Main.storyboard */,
 				5ADCBEC62073F932003D6FD3 /* Info.plist */,
-				5ADCBEFA2076C1BD003D6FD3 /* ItemListViewController.swift */,
 				5AEE4AE6207A5891008FD2B3 /* ItemListDataProvider.swift */,
 				5AEE4AEC207A9B83008FD2B3 /* ItemCell.swift */,
-				5A3AAFFE2089EA3900EC865B /* DetailViewController.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -130,12 +147,11 @@
 		5ADCBEDF2073F980003D6FD3 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5A3AB003208A311700EC865B /* Controllers */,
 				5ADCBEE22073F980003D6FD3 /* Info.plist */,
 				5ADCBEF52076C039003D6FD3 /* Model */,
-				5ADCBEF62076C08E003D6FD3 /* ItemListViewControllerTests.swift */,
 				5AEE4AE8207A8209008FD2B3 /* ItemListDataProviderTests.swift */,
 				5AEE4AEE207BE5D1008FD2B3 /* ItemCellTests.swift */,
-				5A3AAFFC2089E9C300EC865B /* DetailViewControllerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
