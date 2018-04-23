@@ -11,6 +11,8 @@
 		5A3AAFFD2089E9C300EC865B /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AAFFC2089E9C300EC865B /* DetailViewControllerTests.swift */; };
 		5A3AAFFF2089EA3900EC865B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AAFFE2089EA3900EC865B /* DetailViewController.swift */; };
 		5A3AB001208A247F00EC865B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3AB000208A247F00EC865B /* MapKit.framework */; };
+		5A3AB006208E118A00EC865B /* InputViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AB005208E118A00EC865B /* InputViewControllerTests.swift */; };
+		5A3AB008208E120300EC865B /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AB007208E120300EC865B /* InputViewController.swift */; };
 		5ADCBEBB2073F932003D6FD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCBEBA2073F932003D6FD3 /* AppDelegate.swift */; };
 		5ADCBEC22073F932003D6FD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADCBEC12073F932003D6FD3 /* Assets.xcassets */; };
 		5ADCBEC52073F932003D6FD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADCBEC32073F932003D6FD3 /* LaunchScreen.storyboard */; };
@@ -43,6 +45,8 @@
 		5A3AAFFC2089E9C300EC865B /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
 		5A3AAFFE2089EA3900EC865B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5A3AB000208A247F00EC865B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5A3AB005208E118A00EC865B /* InputViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewControllerTests.swift; sourceTree = "<group>"; };
+		5A3AB007208E120300EC865B /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		5ADCBEB72073F932003D6FD3 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADCBEBA2073F932003D6FD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ADCBEC12073F932003D6FD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 			children = (
 				5ADCBEF62076C08E003D6FD3 /* ItemListViewControllerTests.swift */,
 				5A3AAFFC2089E9C300EC865B /* DetailViewControllerTests.swift */,
+				5A3AB005208E118A00EC865B /* InputViewControllerTests.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 			children = (
 				5ADCBEFA2076C1BD003D6FD3 /* ItemListViewController.swift */,
 				5A3AAFFE2089EA3900EC865B /* DetailViewController.swift */,
+				5A3AB007208E120300EC865B /* InputViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3AB008208E120300EC865B /* InputViewController.swift in Sources */,
 				5ADCBEF12074091F003D6FD3 /* ItemManager.swift in Sources */,
 				5AEE4AE7207A5891008FD2B3 /* ItemListDataProvider.swift in Sources */,
 				5ADCBEBB2073F932003D6FD3 /* AppDelegate.swift in Sources */,
@@ -302,6 +309,7 @@
 				5AEE4AEF207BE5D1008FD2B3 /* ItemCellTests.swift in Sources */,
 				5AEE4AE9207A8209008FD2B3 /* ItemListDataProviderTests.swift in Sources */,
 				5ADCBEF320740930003D6FD3 /* ItemManagerTests.swift in Sources */,
+				5A3AB006208E118A00EC865B /* InputViewControllerTests.swift in Sources */,
 				5ADCBEEF2074046D003D6FD3 /* LocationTests.swift in Sources */,
 				5A3AAFFD2089E9C300EC865B /* DetailViewControllerTests.swift in Sources */,
 				5ADCBEEB2073F9C1003D6FD3 /* ToDoItemTests.swift in Sources */,
