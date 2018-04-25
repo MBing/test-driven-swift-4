@@ -64,7 +64,7 @@
 		5ADCBEFA2076C1BD003D6FD3 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		5AEE4AE6207A5891008FD2B3 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 		5AEE4AE8207A8209008FD2B3 /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
-		5AEE4AEC207A9B83008FD2B3 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemCell.swift; path = Controller/ItemCell.swift; sourceTree = "<group>"; };
+		5AEE4AEC207A9B83008FD2B3 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		5AEE4AEE207BE5D1008FD2B3 /* ItemCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +98,8 @@
 		5A3AB003208A311700EC865B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5AEE4AE8207A8209008FD2B3 /* ItemListDataProviderTests.swift */,
+				5AEE4AEE207BE5D1008FD2B3 /* ItemCellTests.swift */,
 				5ADCBEF62076C08E003D6FD3 /* ItemListViewControllerTests.swift */,
 				5A3AAFFC2089E9C300EC865B /* DetailViewControllerTests.swift */,
 				5A3AB005208E118A00EC865B /* InputViewControllerTests.swift */,
@@ -108,6 +110,8 @@
 		5A3AB004208A313D00EC865B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5AEE4AE6207A5891008FD2B3 /* ItemListDataProvider.swift */,
+				5AEE4AEC207A9B83008FD2B3 /* ItemCell.swift */,
 				5ADCBEFA2076C1BD003D6FD3 /* ItemListViewController.swift */,
 				5A3AAFFE2089EA3900EC865B /* DetailViewController.swift */,
 				5A3AB007208E120300EC865B /* InputViewController.swift */,
@@ -144,8 +148,6 @@
 				5ADCBEC32073F932003D6FD3 /* LaunchScreen.storyboard */,
 				5A0596432076C58600304D5D /* Main.storyboard */,
 				5ADCBEC62073F932003D6FD3 /* Info.plist */,
-				5AEE4AE6207A5891008FD2B3 /* ItemListDataProvider.swift */,
-				5AEE4AEC207A9B83008FD2B3 /* ItemCell.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -156,8 +158,6 @@
 				5A3AB003208A311700EC865B /* Controllers */,
 				5ADCBEE22073F980003D6FD3 /* Info.plist */,
 				5ADCBEF52076C039003D6FD3 /* Model */,
-				5AEE4AE8207A8209008FD2B3 /* ItemListDataProviderTests.swift */,
-				5AEE4AEE207BE5D1008FD2B3 /* ItemCellTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
