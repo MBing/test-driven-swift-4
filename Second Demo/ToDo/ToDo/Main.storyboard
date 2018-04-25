@@ -182,9 +182,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UD-G2-eHL">
-                                <rect key="frame" x="272" y="434" width="34" height="30"/>
+                                <rect key="frame" x="272" y="434" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save" destination="BU7-XQ-pFG" eventType="touchUpInside" id="kGo-P8-Ldb"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LAC-sU-aNu">
                                 <rect key="frame" x="148" y="145" width="203" height="30"/>
@@ -223,7 +226,7 @@
                         <outlet property="dateTextField" destination="LAC-sU-aNu" id="eCY-HL-bW5"/>
                         <outlet property="descriptionTextField" destination="5B2-uh-tjC" id="aIO-Ir-uFv"/>
                         <outlet property="locationTextField" destination="xEE-Wv-lvU" id="Gsr-ZT-edh"/>
-                        <outlet property="saveButton" destination="7UD-G2-eHL" id="fwe-1o-Rmk"/>
+                        <outlet property="saveButton" destination="7UD-G2-eHL" id="MXf-gf-kWk"/>
                         <outlet property="titleTextField" destination="Qw4-ac-uVP" id="ylj-md-X5Z"/>
                     </connections>
                 </viewController>
