@@ -135,9 +135,12 @@ class InputViewControllerTests: XCTestCase {
                                -122.0300,
                                accuracy: 0.001)
 
+                // when the async is fulfilled
                 geocoderAnswered.fulfill()
         }
 
+        // you need internet for this test
+        // if the request takes longer than 3sec then the test will fail!
         waitForExpectations(timeout: 3,
                             handler: nil)
     }

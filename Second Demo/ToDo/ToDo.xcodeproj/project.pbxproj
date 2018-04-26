@@ -13,6 +13,9 @@
 		5A3AB001208A247F00EC865B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3AB000208A247F00EC865B /* MapKit.framework */; };
 		5A3AB006208E118A00EC865B /* InputViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AB005208E118A00EC865B /* InputViewControllerTests.swift */; };
 		5A3AB008208E120300EC865B /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AB007208E120300EC865B /* InputViewController.swift */; };
+		5A3AB00A2091ED1C00EC865B /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AB0092091ED1B00EC865B /* APIClientTests.swift */; };
+		5A3AB00C2091ED6200EC865B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AB00B2091ED6200EC865B /* APIClient.swift */; };
+		5A3AB00E2091F48D00EC865B /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AB00D2091F48D00EC865B /* Token.swift */; };
 		5ADCBEBB2073F932003D6FD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADCBEBA2073F932003D6FD3 /* AppDelegate.swift */; };
 		5ADCBEC22073F932003D6FD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADCBEC12073F932003D6FD3 /* Assets.xcassets */; };
 		5ADCBEC52073F932003D6FD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADCBEC32073F932003D6FD3 /* LaunchScreen.storyboard */; };
@@ -47,6 +50,9 @@
 		5A3AB000208A247F00EC865B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5A3AB005208E118A00EC865B /* InputViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewControllerTests.swift; sourceTree = "<group>"; };
 		5A3AB007208E120300EC865B /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		5A3AB0092091ED1B00EC865B /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		5A3AB00B2091ED6200EC865B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5A3AB00D2091F48D00EC865B /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		5ADCBEB72073F932003D6FD3 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADCBEBA2073F932003D6FD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ADCBEC12073F932003D6FD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,6 +154,8 @@
 				5ADCBEC32073F932003D6FD3 /* LaunchScreen.storyboard */,
 				5A0596432076C58600304D5D /* Main.storyboard */,
 				5ADCBEC62073F932003D6FD3 /* Info.plist */,
+				5A3AB00B2091ED6200EC865B /* APIClient.swift */,
+				5A3AB00D2091F48D00EC865B /* Token.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 				5A3AB003208A311700EC865B /* Controllers */,
 				5ADCBEE22073F980003D6FD3 /* Info.plist */,
 				5ADCBEF52076C039003D6FD3 /* Model */,
+				5A3AB0092091ED1B00EC865B /* APIClientTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -293,9 +302,11 @@
 				5A3AB008208E120300EC865B /* InputViewController.swift in Sources */,
 				5ADCBEF12074091F003D6FD3 /* ItemManager.swift in Sources */,
 				5AEE4AE7207A5891008FD2B3 /* ItemListDataProvider.swift in Sources */,
+				5A3AB00C2091ED6200EC865B /* APIClient.swift in Sources */,
 				5ADCBEBB2073F932003D6FD3 /* AppDelegate.swift in Sources */,
 				5ADCBEED20740131003D6FD3 /* Location.swift in Sources */,
 				5AEE4AED207A9B83008FD2B3 /* ItemCell.swift in Sources */,
+				5A3AB00E2091F48D00EC865B /* Token.swift in Sources */,
 				5ADCBEE92073F99C003D6FD3 /* ToDoItem.swift in Sources */,
 				5ADCBEFB2076C1BD003D6FD3 /* ItemListViewController.swift in Sources */,
 				5A3AAFFF2089EA3900EC865B /* DetailViewController.swift in Sources */,
@@ -312,6 +323,7 @@
 				5A3AB006208E118A00EC865B /* InputViewControllerTests.swift in Sources */,
 				5ADCBEEF2074046D003D6FD3 /* LocationTests.swift in Sources */,
 				5A3AAFFD2089E9C300EC865B /* DetailViewControllerTests.swift in Sources */,
+				5A3AB00A2091ED1C00EC865B /* APIClientTests.swift in Sources */,
 				5ADCBEEB2073F9C1003D6FD3 /* ToDoItemTests.swift in Sources */,
 				5ADCBEF72076C08E003D6FD3 /* ItemListViewControllerTests.swift in Sources */,
 			);
