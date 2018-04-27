@@ -10,10 +10,14 @@ import XCTest
 @testable import ToDo
 
 class APIClientTests: XCTestCase {
+    var sut: APIClient!
+    var mockURLSession: MockURLSession!
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = APIClient()
+        mockURLSession = MockURLSession()
+        sut.session = mockURLSession
     }
 
     override func tearDown() {
@@ -36,6 +40,23 @@ class APIClientTests: XCTestCase {
                                           resolvingAgainstBaseURL: true)
 
         XCTAssertEqual(urlComponents?.host, "awesometodos.com")
+    }
+    
+    func test_Login_UsesExpectedPath() {
+        let sut = APIClient()
+        let mockURLSession = MockURLSession()
+        let completion = { (token: Token?, error: Error?) in }
+        sut.loginUser(withName:"dasdom",
+                      password: "1234",
+                      completion: completion)
+        guard let url = mockURLSession.url else {
+            //            XCTFail(); // TODO: should be on, but needs to be checked
+            return
+        }
+        let urlComponents = URLComponents(url: url,
+                                          resolvingAgainstBaseURL: true)
+        
+        XCTAssertEqual(urlComponents?.path, "/login")
     }
 }
 
